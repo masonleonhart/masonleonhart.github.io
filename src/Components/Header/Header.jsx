@@ -24,8 +24,7 @@ function Header() {
                 <img id='me-photo' src="https://github.com/masonleonhart.png?size=200/" alt="" />
                 <div id='me-info'>
                     <p id='full-name-header'>Mason Leonhart</p>
-                    <p className='location-phone-email'>Fargo, North Dakota</p>
-                    <p className='location-phone-email'>(402) 216-2512 | mason.leonhart@gmail.com</p>
+                    <p id='me-desc'>Full Stack Software Engineer living in Fargo, ND.</p>
                     <div id='header-link-wrapper'>
                         <a href='https://github.com/masonleonhart' target='_blank' rel='noreferrer'><GitHubIcon className={classes.linkIcons} /></a>
                         <a href='https://www.linkedin.com/in/masonleonhart/' target='_blank' rel='noreferrer'><LinkedInIcon className={classes.linkIcons} /></a>
