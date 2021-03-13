@@ -5,6 +5,16 @@
     justify-content: space-between;
 }
 
+#drawer-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+}
+
 .active {
     color: #eec59a !important;
+}
+
+.drawer-active {
+    color: #8c663a !important;
 }
