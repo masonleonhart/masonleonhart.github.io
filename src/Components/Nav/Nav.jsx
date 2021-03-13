@@ -14,19 +14,17 @@ function Nav() {
             fontWeight: 'bold'
         }
     });
-    
+
     const classes = useStyles();
 
-    const matches = useMediaQuery('(min-width: 1200px)');
-
-    console.log(matches);
+    const matches = useMediaQuery('(min-width: 1000px)');
 
     return (
         <AppBar position='sticky'>
             <Toolbar id='nav' className={classes.navToolbar}>
                 {matches ? <div id='nav-links'>
                     <Button className={classes.navButton} color='secondary'>
-                    <Link to='me' activeClass='active' spy={true} smooth={true} duration={500}>Mason</Link>
+                        <Link to='me' activeClass='active' spy={true} smooth={true} duration={500}>Mason</Link>
                     </Button>
                     <Button className={classes.navButton} color='secondary'>
                         <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}>About</Link>
@@ -37,10 +35,10 @@ function Nav() {
                     <Button className={classes.navButton} color='secondary'>
                         <Link to='education' activeClass='active' spy={true} smooth={true} duration={500}>Education</Link>
                     </Button>
-                </div> : 
-                <Button color='secondary'>
-                    <MenuIcon />
-                </Button>}
+                </div> :
+                    <Button color='secondary'>
+                        <MenuIcon />
+                    </Button>}
             </Toolbar>
         </AppBar>
     );
