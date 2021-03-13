@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import { Element } from 'react-scroll';
+
+import Nav from './Components/Nav/Nav';
+import ComponentOne from './Components/ComponentOne/ComponentOne';
+import ComponentTwo from './Components/ComponentTwo/ComponentTwo';
+import Footer from './Components/Footer/Footer';
+
+import { CssBaseline } from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#186327'
+    }
+  }
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CssBaseline>
+      <ThemeProvider theme={theme}>
+        <div className="App">
+          <Nav />
+          <Element name='one'>
+            <ComponentOne />
+          </Element>
+          <Element name='two'>
+            <ComponentTwo />
+          </Element>
+          <Footer />
+        </div>
+      </ThemeProvider>
+    </CssBaseline>
   );
 }
 
