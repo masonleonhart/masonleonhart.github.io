@@ -14,6 +14,9 @@ function Nav() {
             zIndex: theme.zIndex.drawer + 1,
             position: 'sticky'
         },
+        menuIcon: {
+            marginRight: 5
+        },
         navToolbar: {
             minHeight: 'fit-content'
         },
@@ -54,7 +57,8 @@ function Nav() {
                             color='secondary'
                             onClick={() => !drawerToggle ? setDrawerToggle(true) : setDrawerToggle(false)}
                         >
-                            <MenuIcon />
+                            <MenuIcon className={classes.menuIcon} />
+                            Menu
                         </Button>}
                 </Toolbar>
             </AppBar>
