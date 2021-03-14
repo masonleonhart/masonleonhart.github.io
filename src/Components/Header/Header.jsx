@@ -1,6 +1,6 @@
 import './Header.css';
 
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, useMediaQuery } from '@material-ui/core';
 
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -12,15 +12,17 @@ function Header() {
             width: 40,
             height: 40,
             margin: '0 10px 0 10px',
-            color: 'black'
+            color: '#f9f6eb'
         },
     });
 
     const classes = useStyles();
 
+    const matches = useMediaQuery('(max-width: 871px)');
+
     return (
         <div id='header'>
-            <div id='me-card'>
+            <div id='me-card' className={matches ? 'no-gradient' : ''}>
                 <img id='me-photo' src="https://github.com/masonleonhart.png?size=200/" alt="" />
                 <div id='me-info'>
                     <p id='full-name-header'>Mason Leonhart</p>

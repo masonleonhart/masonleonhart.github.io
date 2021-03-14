@@ -1,4 +1,42 @@
 #about {
-    min-height: 250px;
     background-color: #0f3c78;
+    padding: 3em;
+    color: #f9f6eb;
+}
+
+#about-stuff {
+    margin: auto;
+    max-width: 1400px;
+}
+
+.about-column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-header {
+    margin: 0;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+#about-content {
+    font-size: 1.25rem;
+    max-width: 45rem;
+    margin: 0 2em 0 2rem;
+}
+
+#winnie-image {
+    width: 200px;
+    border-radius: 50%;
+    border: solid 6px #f9f6eb;
+    margin-top: 2rem;
 }
