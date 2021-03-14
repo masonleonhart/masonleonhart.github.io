@@ -22,33 +22,39 @@ function Header() {
 
   return (
     <div id="header">
-      <div id="me-card" className={matches ? "no-gradient" : ""}>
-        <img
-          id="me-photo"
-          src="https://github.com/masonleonhart.png?size=200/"
-          alt=""
-        />
-        <div id="me-info">
-          <p id="full-name-header">Mason Leonhart</p>
-          <p id="me-desc">Full Stack Software Engineer living in Fargo, ND.</p>
-          <div id="header-link-wrapper">
-            <a
-              href="https://github.com/masonleonhart"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitHubIcon className={classes.linkIcons} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/masonleonhart/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkedInIcon className={classes.linkIcons} />
-            </a>
-            <a href="mailto:mason.leonhart@gmaill.com">
-              <EmailIcon className={classes.linkIcons} />
-            </a>
+      <div id="scrim">
+        <div id="me-card" className={matches ? "no-gradient" : ""}>
+          <img
+            id="me-photo"
+            src="https://github.com/masonleonhart.png?size=200/"
+            alt=""
+          />
+          <div id="header-info">
+            <div id="me-info">
+              <p id="full-name-header">Mason Leonhart</p>
+              <p id="me-desc">
+                Full Stack Software Engineer living in Fargo, ND.
+              </p>
+            </div>
+            <div id="header-link-wrapper">
+              <a
+                href="https://github.com/masonleonhart"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHubIcon className={classes.linkIcons} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/masonleonhart/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInIcon className={classes.linkIcons} />
+              </a>
+              <a href="mailto:mason.leonhart@gmaill.com">
+                <EmailIcon className={classes.linkIcons} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

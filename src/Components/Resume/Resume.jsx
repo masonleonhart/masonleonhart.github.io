@@ -63,7 +63,7 @@ function Resume() {
           onChange={(event, newValue) => setTabValue(newValue)}
           indicatorColor="primary"
           textColor="primary"
-          variant="fullWidth"
+          variant={matches ? "fullWidth" : "standard"}
         >
           <Tab label="Portfolio" />
           <Tab label={matches ? "Education" : "Skills and Education"} />
