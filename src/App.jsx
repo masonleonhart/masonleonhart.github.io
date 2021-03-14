@@ -3,6 +3,7 @@ import { Element } from 'react-scroll';
 import Nav from './Components/Nav/Nav';
 import Header from './Components/Header/Header';
 import About from './Components/About/About';
+import CV from './Components/CV/CV';
 import Footer from './Components/Footer/Footer';
 
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -31,15 +32,8 @@ function App() {
         <Element name='about'>
           <About />
         </Element>
-        <Element name='portfolio'>
-          <div style={{ minHeight: 400 }}>
-
-          </div>
-        </Element>
-        <Element name='education'>
-          <div style={{ minHeight: 400 }}>
-
-          </div>
+        <Element name='cv'>
+          <CV />
         </Element>
         <Footer />
       </div>

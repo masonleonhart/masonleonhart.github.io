@@ -47,10 +47,7 @@ function Nav() {
                             <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}>About</Link>
                         </Button>
                         <Button className={classes.navButton} color='secondary'>
-                            <Link to='portfolio' activeClass='active' spy={true} smooth={true} duration={500}>Portfolio</Link>
-                        </Button>
-                        <Button className={classes.navButton} color='secondary'>
-                            <Link to='education' activeClass='active' spy={true} smooth={true} duration={500}>Education</Link>
+                            <Link to='cv' activeClass='active' spy={true} smooth={true} duration={500}>CV</Link>
                         </Button>
                     </div> :
                         <Button
@@ -76,10 +73,7 @@ function Nav() {
                         <Link to='about' activeClass='drawer-active' spy={true} smooth={true} duration={500}>About</Link>
                     </Button>
                     <Button className={classes.navButton} color='primary'>
-                        <Link to='portfolio' activeClass='drawer-active' spy={true} smooth={true} duration={500}>Portfolio</Link>
-                    </Button>
-                    <Button className={classes.navButton} color='primary'>
-                        <Link to='education' activeClass='drawer-active' spy={true} smooth={true} duration={500}>Education</Link>
+                        <Link to='cv' activeClass='drawer-active' spy={true} smooth={true} duration={500}>CV</Link>
                     </Button>
                 </div>
             </Drawer>

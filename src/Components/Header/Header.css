@@ -32,6 +32,7 @@
 
 #me-photo {
     border-radius: 50%;
+    border: solid 6px #f9f6eb;
 }
 
 #me-info {
