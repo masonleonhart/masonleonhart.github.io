@@ -1,0 +1,18 @@
+#resume {
+    background-color: #f9f6eb;
+    padding: 3rem;
+}
+
+@media (max-width: 871px) {
+    #resume {
+        padding: 3rem 1rem 1.5rem 1rem;
+    }
+}
+
+#resume-header {
+    padding: 1rem;
+    margin: 0;
+    font-size: 2rem;
+    background-color: #0f3c78;
+    color: #f9f6eb;
+}

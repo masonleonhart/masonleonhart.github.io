@@ -26,6 +26,18 @@
     align-items: center;
 }
 
+@media (max-width: 871px) {
+    #header {
+        padding-top: 2rem;
+    }
+    #me-card {
+        text-align: center;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
+}
+
 .no-gradient {
     background-image: none !important;
 }

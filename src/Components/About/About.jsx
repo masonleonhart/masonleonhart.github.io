@@ -14,7 +14,7 @@ function About() {
                 <p id='about-content'>
                     I enjoy cooking, video games, and the wilderness. When I am not learning
                     about or writing code, you can find me with friends and family, my pups,
-                    or dusting clay pigeons at the trap shooting club.
+                    or dusting clay pigeons at The Shooting Park.
             </p>
                 <img id='winnie-image' src={winnie} alt="" />
             </div>

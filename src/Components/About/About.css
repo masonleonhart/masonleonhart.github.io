@@ -3,6 +3,11 @@
     padding: 3em;
     color: #f9f6eb;
 }
+@media (max-width: 871px) {
+    #about {
+        padding: 3rem 1rem 1.5rem 1rem;
+    }
+}
 
 #about-stuff {
     margin: auto;

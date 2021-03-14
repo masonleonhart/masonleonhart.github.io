@@ -18,7 +18,7 @@ function Header() {
 
     const classes = useStyles();
 
-    const matches = useMediaQuery('(max-width: 871px)');
+    const matches = useMediaQuery('(max-width: 1224px)');
 
     return (
         <div id='header'>

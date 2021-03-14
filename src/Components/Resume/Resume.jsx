@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './CV.css';
+import './Resume.css';
 import { Paper, makeStyles, useMediaQuery, Tabs, Tab, Box, Typography } from '@material-ui/core';
 
 function TabPanel(props) {
@@ -30,14 +30,15 @@ TabPanel.propTypes = {
     value: PropTypes.any.isRequired,
 };
 
-function CV() {
+function Resume() {
     const [tabValue, setTabValue] = useState(0);
 
     const useStyles = makeStyles({
         paper: {
             height: '100%',
+            minHeight: 700,
             maxWidth: 1400,
-            margin: 'auto'
+            margin: 'auto',
         },
     });
 
@@ -46,8 +47,9 @@ function CV() {
     const classes = useStyles();
 
     return (
-        <div id='cv'>
+        <div id='resume'>
             <Paper className={classes.paper}>
+                <p id='resume-header'>Resume</p>
                 <Tabs
                     value={tabValue}
                     onChange={(event, newValue) => setTabValue(newValue)}
@@ -73,4 +75,4 @@ function CV() {
     );
 };
 
-export default CV;
+export default Resume;

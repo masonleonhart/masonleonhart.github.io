@@ -33,7 +33,7 @@ function Nav() {
 
     const classes = useStyles();
 
-    const matches = useMediaQuery('(min-width: 1000px)');
+    const matches = useMediaQuery('(min-width: 871px)');
 
     return (
         <>
@@ -47,7 +47,7 @@ function Nav() {
                             <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}>About</Link>
                         </Button>
                         <Button className={classes.navButton} color='secondary'>
-                            <Link to='cv' activeClass='active' spy={true} smooth={true} duration={500}>CV</Link>
+                            <Link to='resume' activeClass='active' spy={true} smooth={true} duration={500}>Resume</Link>
                         </Button>
                     </div> :
                         <Button
@@ -73,7 +73,7 @@ function Nav() {
                         <Link to='about' activeClass='drawer-active' spy={true} smooth={true} duration={500}>About</Link>
                     </Button>
                     <Button className={classes.navButton} color='primary'>
-                        <Link to='cv' activeClass='drawer-active' spy={true} smooth={true} duration={500}>CV</Link>
+                        <Link to='resume' activeClass='drawer-active' spy={true} smooth={true} duration={500}>Resume</Link>
                     </Button>
                 </div>
             </Drawer>
