@@ -1,38 +1,37 @@
-import { Element } from 'react-scroll';
+import { Element } from "react-scroll";
 
-import Nav from './Components/Nav/Nav';
-import Header from './Components/Header/Header';
-import About from './Components/About/About';
-import Resume from './Components/Resume/Resume';
-import Footer from './Components/Footer/Footer';
+import Nav from "./Components/Nav/Nav";
+import Header from "./Components/Header/Header";
+import About from "./Components/About/About";
+import Resume from "./Components/Resume/Resume";
+import Footer from "./Components/Footer/Footer";
 
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#0f3c78'
+      main: "#0f3c78",
     },
     secondary: {
-      main: '#f9f6eb'
-    }
-  }
+      main: "#f9f6eb",
+    },
+  },
 });
 
 function App() {
-
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
         <Nav />
-        <Element name='me'>
+        <Element name="me">
           <Header />
         </Element>
-        <Element name='about'>
+        <Element name="about">
           <About />
         </Element>
-        <Element name='resume'>
+        <Element name="resume">
           <Resume />
         </Element>
         <Footer />

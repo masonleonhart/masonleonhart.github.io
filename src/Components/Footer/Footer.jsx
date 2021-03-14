@@ -1,12 +1,11 @@
-import './Footer.css';
+import "./Footer.css";
 
 function Footer() {
-
-    return (
-        <footer>
-            <p>Created by Mason Leonhart 2021</p>
-        </footer>
-    );
-};
+  return (
+    <footer>
+      <p>Created by Mason Leonhart 2021</p>
+    </footer>
+  );
+}
 
 export default Footer;
