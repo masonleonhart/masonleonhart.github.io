@@ -18,17 +18,12 @@ function Header() {
 
   const classes = useStyles();
 
-  const matches = useMediaQuery("(max-width: 1224px)");
+  const matches = useMediaQuery("(max-width: 871px)");
 
   return (
     <div id="header">
       <div id="scrim">
         <div id="me-card" className={matches ? "no-gradient" : ""}>
-          <img
-            id="me-photo"
-            src="https://github.com/masonleonhart.png?size=200/"
-            alt=""
-          />
           <div id="header-info">
             <div id="me-info">
               <p id="full-name-header">Mason Leonhart</p>
@@ -37,12 +32,8 @@ function Header() {
               </p>
             </div>
             <div id="header-link-wrapper">
-              <a
-                href="https://github.com/masonleonhart"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHubIcon className={classes.linkIcons} />
+              <a href="mailto:mason.leonhart@gmaill.com">
+                <EmailIcon className={classes.linkIcons} />
               </a>
               <a
                 href="https://www.linkedin.com/in/masonleonhart/"
@@ -51,11 +42,20 @@ function Header() {
               >
                 <LinkedInIcon className={classes.linkIcons} />
               </a>
-              <a href="mailto:mason.leonhart@gmaill.com">
-                <EmailIcon className={classes.linkIcons} />
+              <a
+                href="https://github.com/masonleonhart"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHubIcon className={classes.linkIcons} />
               </a>
             </div>
           </div>
+          <img
+            id="me-photo"
+            src="https://github.com/masonleonhart.png?size=200/"
+            alt=""
+          />
         </div>
       </div>
     </div>

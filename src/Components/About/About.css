@@ -17,20 +17,27 @@
 .about-column {
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
 .about-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #about-header {
     margin: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
     font-size: 2rem;
+}
+
+@media (max-width: 871px) {
+    #about-header {
+        margin-left: 0;
+    }
 }
 
 #about-content {
