@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer>
-      <p>Created by Mason Leonhart 2021</p>
+      <p>Created by Mason Leonhart &copy; 2021</p>
     </footer>
   );
 }
