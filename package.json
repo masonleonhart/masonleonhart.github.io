@@ -1,8 +1,7 @@
 {
-  "homepage": "https://masonleonhart.github.io/portfolio-site/",
-  "name": "portfolio-site",
+  "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://masonleonhart.github.io",
+  "homepage": "https://masonleonhart.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
